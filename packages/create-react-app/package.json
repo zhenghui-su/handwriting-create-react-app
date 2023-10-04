@@ -4,5 +4,9 @@
   "description": "> TODO: description",
   "author": "suzhenghui <343196323@qq.com>",
   "homepage": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0"
+  }
 }
