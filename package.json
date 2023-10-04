@@ -5,11 +5,14 @@
     "packages/*"
   ],
   "dependencies": {
-    "chalk": "^5.3.0",
+    "chalk": "^4.1.2",
     "cross-spawn": "^7.0.3",
     "fs-extra": "^11.1.1"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "create-react-app": "node ./packages/create-react-app/index.js"
   }
 }
