@@ -4,7 +4,11 @@
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cross-spawn": "^7.0.3",
+    "fs-extra": "^11.1.1"
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   }
