@@ -45,3 +45,45 @@ lerna create create-react-app
 然后进入，把一些无用的删除，最终形成如下
 
 ![image-20231004233303465](C:/Users/su/AppData/Roaming/Typora/typora-user-images/image-20231004233303465.png)
+
+##### 创建react-scripts
+
+终端输入
+
+```bash
+lerna create react-scripts
+```
+
+##### 创建cra-template
+
+终端输入
+
+```bash
+lerna create cra-template
+```
+
+##### 查看工作包
+
+终端输入
+
+```bash
+yarn workspaces info
+```
+
+![image-20231004234845726](C:/Users/su/AppData/Roaming/Typora/typora-user-images/image-20231004234845726.png)
+
+最终形成的结构图如下
+
+![image-20231004234956700](C:/Users/su/AppData/Roaming/Typora/typora-user-images/image-20231004234956700.png)
+
+### 添加依赖
+
+在添加之前记得要设置为淘宝源，不然可能会安装很慢
+
+```bash
+yarn add chalk cross-spawn fs-extra --ignore-workspace-root-check
+```
+
+在lerna里面，packages里面的各个会在node_modules里面形成符号链接即软链
+
+![image-20231004235537950](C:/Users/su/AppData/Roaming/Typora/typora-user-images/image-20231004235537950.png)
