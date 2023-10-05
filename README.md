@@ -51,7 +51,7 @@ yarn install
 
 然后创建 packages 文件夹（workspace），最终形成的初始文件目录如下
 
-![image-20231004232629874](C:/Users/su/AppData/Roaming/Typora/typora-user-images/image-20231004232629874.png)
+![image-20231004232629874](https://gitee.com/dont-sleep-in-the-morning/pictures/raw/master/image-20231004232629874.png)
 
 ### 创建 package
 
@@ -65,7 +65,7 @@ lerna create create-react-app
 
 然后进入，把一些无用的删除，最终形成如下
 
-![image-20231004233303465](C:/Users/su/AppData/Roaming/Typora/typora-user-images/image-20231004233303465.png)
+![image-20231004233303465](https://gitee.com/dont-sleep-in-the-morning/pictures/raw/master/image-20231004233303465.png)
 
 ##### 创建react-scripts
 
@@ -91,11 +91,11 @@ lerna create cra-template
 yarn workspaces info
 ```
 
-![image-20231004234845726](C:/Users/su/AppData/Roaming/Typora/typora-user-images/image-20231004234845726.png)
+![image-20231004234845726](https://gitee.com/dont-sleep-in-the-morning/pictures/raw/master/image-20231004234845726.png)
 
 最终形成的结构图如下
 
-![image-20231004234956700](C:/Users/su/AppData/Roaming/Typora/typora-user-images/image-20231004234956700.png)
+![image-20231004234956700](https://gitee.com/dont-sleep-in-the-morning/pictures/raw/master/image-20231004234956700.png)
 
 ### 添加依赖
 
@@ -114,7 +114,7 @@ yarn add chalk cross-spawn fs-extra --ignore-workspace-root-check
 
 在lerna里面，packages里面的各个会在node_modules里面形成符号链接即软链，这样可以在别的package中访问另一个package
 
-![image-20231004235537950](C:/Users/su/AppData/Roaming/Typora/typora-user-images/image-20231004235537950.png)
+![image-20231004235537950](https://gitee.com/dont-sleep-in-the-morning/pictures/raw/master/image-20231004235537950.png)
 
 
 
@@ -248,7 +248,7 @@ async function createApp(appName) { // projectName = appName
 npm run create-react-app -- myApp
 ```
 
-![image-20231005013532488](C:/Users/su/AppData/Roaming/Typora/typora-user-images/image-20231005013532488.png)
+![image-20231005013532488](https://gitee.com/dont-sleep-in-the-morning/pictures/raw/master/image-20231005013532488.png)
 
 > 扩展 JSON.stringify
 >
