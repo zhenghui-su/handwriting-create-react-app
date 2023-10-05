@@ -14,6 +14,7 @@
   },
   "scripts": {
     "create-react-app": "node ./packages/create-react-app/index.js",
-    "build": "cd packages/react-scripts && node bin/react-scripts.js build"
+    "build": "cd packages/react-scripts && node bin/react-scripts.js build",
+    "start": "cd packages/react-scripts && node bin/react-scripts.js start"
   }
 }
