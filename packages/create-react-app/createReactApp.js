@@ -5,6 +5,7 @@ const path = require('path');
 const fs = require('fs-extra');
 const spawn = require('cross-spawn');
 
+// 初始化函数
 async function init() {
     let projectName;
     new Command(packageJSON.name) // 项目名
@@ -19,6 +20,7 @@ async function init() {
     await createApp(projectName);
 }
 
+// 创建项目函数
 async function createApp(appName) { // projectName = appName
     let root = path.resolve(appName); // 得到将生成项目绝对路径
     fs.ensureDirSync(appName);// 保证此目录是存在的，如果不存在则创建
@@ -69,6 +71,7 @@ async function run(root, appName, originalDirectory) {
     console.log('Done.');
     process.exit(0);//退出
 }
+// 执行node脚本函数
 async function executeNodeScript({ cwd }, data, source) {
     return new Promise((resolve) => {
         const child = spawn(
@@ -79,6 +82,7 @@ async function executeNodeScript({ cwd }, data, source) {
         child.on('close', resolve);
     });
 }
+// 安装函数
 async function install(root, allDependencies) {
     return new Promise(resolve => {
         const command = 'yarnpkg'; //yarnpkg = yarn
