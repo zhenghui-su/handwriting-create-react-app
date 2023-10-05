@@ -13,6 +13,7 @@
     "lerna": "^3.22.1"
   },
   "scripts": {
-    "create-react-app": "node ./packages/create-react-app/index.js"
+    "create-react-app": "node ./packages/create-react-app/index.js",
+    "build": "cd packages/react-scripts && node bin/react-scripts.js build"
   }
 }
